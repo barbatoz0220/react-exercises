@@ -1,13 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
+import Component from './Component';
 
-import WithoutFragments from './WithoutFragments';
-import WithFragments from './WithFragments';
-
-render(
-  <div>
-    <WithoutFragments />
-    <WithFragments />
-  </div>,
-  document.getElementById('root')
-)
+render( <Component/>, document.getElementById('root'))
