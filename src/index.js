@@ -1,5 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Component from './Component';
+import MyComponent from './MyComponent';
 
-render( <Component/>, document.getElementById('root'))
+const myComponent = render(<MyComponent />, document.getElementById('root'));
+setTimeout(() => {
+    myComponent.setState({
+        heading: 'React Awesomeness (available)',
+        content: 'Done!'
+    });
+}, 3000);
